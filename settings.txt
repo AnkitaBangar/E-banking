@@ -1,0 +1,26 @@
+1)install java 1.6 or 1.7 version
+
+2) goto MyComputer ->Properties-> Advanced - >Envirenment Variable -> create new User variable
+Name : JAVA_HOME
+value : C:\Program Files\Java\jdk1.6.0_02 or jdk1.7.0_02
+
+3)again create new variable 
+Name : CATALINA_HOME
+Value : C:\tomcat6
+
+4) again in system variable 
+edit path variable and add this to the end of the variable
+;C:\Program Files\Java\jdk1.6.0_02 or jdk1.7.0_02
+
+
+5) Add mail.jar and activation.jar files to your tomcat lib folder from WEB-INF/classes folder
+
+6) restart your apache tomcat
+
+7) apply all the settings and save it.
+
+8)Start Mysql and import database backup saved to db folder	
+
+9 run cmd in cmd prompt
+javac -d c:\xampp\tomcat\webapps\onlinebank\WEB-INF\classes
+c:\xampp\tomcat\webapps\onlinebank\WEB-INF\classes\BankCommons.java
